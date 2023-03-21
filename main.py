@@ -62,9 +62,9 @@ inputLastName = Entry(framePeople, textvariable=LastName).grid(row=2, column=2)
 inputPassword = Entry(framePeople, textvariable=Password, show="*").grid(row=3, column=2)
 inputAddress = Entry(framePeople, textvariable=Address).grid(row=4, column=2)
 commentsText = Text(framePeople, width=20, height=4)
-commentsText.grid(row=5, column=2)
+commentsText.grid(row=5, column=2, pady=8)
 scrollComments = Scrollbar(framePeople, command=commentsText.yview)
-scrollComments.grid(row=5, column=3, sticky="nsew")
+scrollComments.grid(row=5, column=3, pady=8, sticky="nsew")
 commentsText.config(yscrollcommand=scrollComments.set)
 
 

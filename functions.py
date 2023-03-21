@@ -24,7 +24,6 @@ def showAllData():
 
 
     data = showData()
-    print(data)
     treeview = ttk.Treeview(rootTwo, columns=("columna2", "columna3", "columna4", "columna5"))
     
     treeview.heading("columna2",text="Nombre")
